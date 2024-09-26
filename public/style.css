@@ -1,0 +1,73 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    position: relative;
+    transition: 0.3s ease; /* Transition effect for when the navbar moves */
+  }
+  
+  .navbar input {
+    padding: 5px;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    position: fixed;
+    width: 250px;
+    left: -250px;
+    top: 0;
+    height: 100%;
+    background-color: #111;
+    transition: 0.3s;
+    padding-top: 60px;
+  }
+  
+  .sidebar button {
+    color: white;
+    padding: 10px;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    background: none;
+    color: white;
+  }
+  
+  /* Transitioning the navbar and main content to the right when sidebar is open */
+  .navbar.shift-right {
+    transform: translateX(250px); /* Move to the right */
+  }
+  
+  main {
+    padding: 20px;
+    transition: 0.3s;
+  }
+  
+  /* Shift the content as well when the sidebar opens */
+  main.shift-right {
+    transform: translateX(250px);
+  }
+  
+  /* Main Content */
+  main {
+    padding: 20px;
+  }
+  
+  
